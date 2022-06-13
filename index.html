@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./Style/style.css">
+</head>
+<body>
+    <section id="Heading">
+        <h1 style="padding-top: 50px">✧･ﾟ: *✧･ﾟ:* BMI *:･ﾟ✧*:･ﾟ✧</h1>
+    </section>
+
+    <section style="margin-top: 50px;" id="Height">
+        <h4>Height (in Cm)</h4>
+            <input type="range" min="100" max="250" value="100" id="height" oninput="calculate()">
+        <span style="margin-top: 10px;" id="height-val"></span>
+    </section>
+
+    <section id="Weight" >
+        <h4 style="margin-top: 50px;">Weight (in KG)</h4>
+            <input type="range" min="20" max="200" value="20" id="weight" oninput="calculate()">
+        <span style="margin-top: 10px;" id="weight-val"></span>
+    </section>
+
+    <div style="margin-top: 10px;" class="display">
+        <p id="result"></p>
+        <br>
+        <p id="category"></p>
+     </div>
+
+    <script src= "Script/Code.js"></script>
+</body>
+</html>
